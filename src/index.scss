@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+
+$main-color: #ffd700;
+$sub-color: #d4af37;
+$light-color: #d9d9d9;
+$dark-subtle: #181818;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", sans-serif !important;
+    word-spacing: 2px;
+  }
+  h1 {
+    font-size: 36px;
+    span {
+      font-family: "Playfair Display", sans-serif !important;
+      letter-spacing: 1.8px;
+      word-spacing: 3px;
+      color: $light-color;
+    }
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: $dark-subtle;
+}
+
+header {
+  .menuBurger {
+    width: 40px !important;
+    height: 30px !important;
+    padding: 0 !important;
+    align-items: end;
+    left: auto !important;
+    right: 2.5%;
+    .menuBurgerItem {
+      top: 15px;
+      height: 4px;
+    }
+    .menuBurgerItem:nth-child(1) {
+      width: 80%;
+    }
+    .menuBurgerItem:nth-child(2) {
+      width: 60%;
+    }
+    .menuBurgerItem:nth-child(3) {
+      width: 40%;
+    }
+    .menuBurgerItem1,
+    .menuBurgerItem2,
+    .menuBurgerItem3 {
+      width: 80% !important;
+    }
+  }
+}
+.word {
+  width: 200px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.card:hover .card-overlay {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  img {
+    transform: scale(1.1);
+  }
+}
+.MuiModal-backdrop {
+  background-color: rgba(0, 0, 0, 0.788) !important;
+}
+#photodetails,
+.ratings {
+  svg {
+    fill: #fff !important ;
+  }
+}
+.MuiPaginationItem-text {
+  color: #d9d9d9 !important;
+}
+textarea {
+  resize: none;
+}
+::selection {
+  background-color: #ffd700;
+  color: #181818;
+  padding: 5px;
+  -webkit-text-fill-color: #181818;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffd700;
+  box-shadow: 0px 2px 5px 1px rgba(19, 19, 19, 0.938);
+}
